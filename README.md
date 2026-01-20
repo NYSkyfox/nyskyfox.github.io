@@ -1,4 +1,4 @@
-[Hux Blog](https://huangxuan.me)
+[九幽天狐 | NYSkyfox](https://nyskyfox.github.io)
 ================================
 
 > I never expected this to become popular.
