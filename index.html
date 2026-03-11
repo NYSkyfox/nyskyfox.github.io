@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>余阿强 | 小强</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  
+  <style>
+    :root {
+      /* 核心色调：#16c07c */
+      --theme-color: #16c07c;
+      --base-font-size: 16px;
+      
+      /* 深度自定义暗色背景与文字 */
+      --content-max-width: 50em;
+      --sidebar-width: 18rem;
+      
+      /* 链接与加粗样式 */
+      --link-color: #16c07c;
+      --strong-color: #16c07c;
+    }
+
+    /* 模拟 VitePress 的卡片或特定字体排版 */
+    .markdown-section h1 {
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    /* 优化侧边栏激活状态 */
+    .sidebar ul li.active > a {
+      border-right: 2px solid var(--theme-color);
+      color: var(--theme-color) !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      name: '余阿强 | 小强',
+      repo: '', // 填入你的 GitHub 地址
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      // 默认内容，如果没有 README.md 则显示这个
+      homepage: 'README.md', 
+      search: {
+        placeholder: '搜索',
+        noData: '未找到结果',
+        depth: 2
+      }
+    }
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+</body>
+  </html>
