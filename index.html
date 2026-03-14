@@ -170,13 +170,16 @@
         </div>
         
         <div class="tip">
-            <strong>🚀 部署说明：</strong>
+            <strong>🚀 部署说明（已修复重叠问题）：</strong>
+            <p style="margin-top: 10px;">我已修复了 GitHub Pages 部署时 index.html 和 README.md 重叠显示的问题。</p>
             <ol style="margin-top: 10px; padding-left: 20px;">
                 <li>将整个 <code>docs</code> 目录推送到 GitHub 仓库</li>
                 <li>在仓库设置中启用 GitHub Pages</li>
                 <li>选择 <code>GitHub Actions</code> 作为源</li>
                 <li>每次推送到 main 分支会自动部署</li>
+                <li>查看 <code>docs/DEPLOYMENT.md</code> 获取详细部署指南</li>
             </ol>
+            <p style="margin-top: 10px; color: #16c07c; font-weight: bold;">✓ 已添加 .nojekyll 文件解决重叠问题</p>
         </div>
         
         <div class="features">
@@ -200,30 +203,3 @@
     </script>
 </body>
 </html>
-  </style>
-</head>
-<body>
-  <div id="app">加载中...</div>
-  <script>
-    window.$docsify = {
-      name: '余阿强 | 小强',
-      repo: '', // 填入你的 GitHub 地址
-      loadSidebar: true,
-      subMaxLevel: 3,
-      auto2top: true,
-      // 默认内容，如果没有 README.md 则显示这个
-      homepage: 'README.md', 
-      search: {
-        placeholder: '搜索',
-        noData: '未找到结果',
-        depth: 2
-      }
-    }
-  </script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-</body>
-  </html>
