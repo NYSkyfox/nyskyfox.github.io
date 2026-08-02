@@ -14,7 +14,7 @@ hero:
       link: /guide/intro
     - theme: brand
       text: 网络解锁教程
-      link: /guide/unlock_network
+      link: /tutorial/unlock_network
 
 features:
   - icon: 🧩
