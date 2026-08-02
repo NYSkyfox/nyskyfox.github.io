@@ -2,10 +2,6 @@ import type { DefaultTheme } from 'vitepress'
 
 /** 站点外观 & 汉化 */
 export const themeConfig: DefaultTheme.Config = {
-  logo: '/logo.svg',
-  socialLinks: [
-    { icon: 'github', link: 'https://github.com/NYskyfox' }
-  ],
   search: {
     provider: 'local',
     options: {
