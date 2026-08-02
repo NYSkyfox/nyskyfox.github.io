@@ -43,7 +43,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       ]
     }
   ],
-  '/development/': [
+  '/develop/': [
     {
       text: '开发',
       collapsed: false,
