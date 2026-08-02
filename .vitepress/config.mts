@@ -35,6 +35,10 @@ export default defineConfig({
   },
 
   themeConfig: {
+    logo: '/logo.svg',
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/NYskyfox' }
+    ],
     ...themeConfig,
     nav,
     sidebar
