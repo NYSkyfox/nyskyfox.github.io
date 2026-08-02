@@ -9,9 +9,14 @@ export const nav: DefaultTheme.NavItem[] = [
     activeMatch: '^/guide/'
   },
   {
+    text: '教程',
+    link: '/tutorial/',
+    activeMatch: '^/tutorial/'
+  },
+  {
     text: '开发',
-    link: '/development/',
-    activeMatch: '^/development/'
+    link: '/develop/',
+    activeMatch: '^/develop/'
   }
 ]
 
@@ -23,9 +28,18 @@ export const sidebar: DefaultTheme.Sidebar = {
       collapsed: false,
       collapsible: true,
       items: [
-        { text: '简介', link: '/guide/intro' },
-        { text: '网络解锁教程', link: '/guide/unlock_network' },
-        { text: '挂起学生端教程', link: '/guide/suspend_student' }
+        { text: '简介', link: '/guide/intro' }
+      ]
+    }
+  ],
+  '/tutorial/': [
+    {
+      text: '教程',
+      collapsed: false,
+      collapsible: true,
+      items: [
+        { text: '网络解锁教程', link: '/tutorial/unlock_network' },
+        { text: '挂起学生端教程', link: '/tutorial/suspend_student' }
       ]
     }
   ],
@@ -35,7 +49,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       collapsed: false,
       collapsible: true,
       items: [
-        { text: '快速上手', link: '/development/start' }
+        { text: '快速上手', link: '/develop/start' }
       ]
     }
   ]
