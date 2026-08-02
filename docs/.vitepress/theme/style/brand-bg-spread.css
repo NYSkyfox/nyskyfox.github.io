@@ -1,0 +1,15 @@
+/* 品牌色扩散到页面背景 */
+
+:root {
+  --vp-c-bg: color-mix(in srgb, var(--vp-c-brand-1) 7%, white 93%);
+  --vp-c-bg-alt: color-mix(in srgb, var(--vp-c-brand-1) 8%, white 92%);
+  --vp-c-bg-soft: color-mix(in srgb, var(--vp-c-brand-1) 8%, white 92%);
+  --vp-c-bg-elv: color-mix(in srgb, var(--vp-c-brand-1) 8%, white 92%);
+}
+
+.dark {
+  --vp-c-bg: color-mix(in srgb, var(--vp-c-brand-1) 10%, black 90%);
+  --vp-c-bg-alt: color-mix(in srgb, var(--vp-c-brand-1) 9%, black 91%);
+  --vp-c-bg-soft: color-mix(in srgb, var(--vp-c-brand-1) 9%, black 91%);
+  --vp-c-bg-elv: color-mix(in srgb, var(--vp-c-brand-1) 10%, black 90%);
+}

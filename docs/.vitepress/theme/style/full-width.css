@@ -1,0 +1,35 @@
+/* .vitepress/theme/style/full-width.css */
+/* 桌面端解除 VitePress 默认宽度限制，全宽布局 */
+
+@media (min-width: 1280px) {
+  :root {
+    --vp-layout-max-width: 100%;
+  }
+
+  /* Navbar */
+  .VPNavBar > .wrapper > .container,
+  .VPNavBar.has-sidebar > .wrapper > .container {
+    max-width: 100% !important;
+  }
+
+  .VPNavBar.has-sidebar > .wrapper > .container > .content {
+    padding-right: 32px !important;
+  }
+
+  /* 内容区 */
+  .VPDoc.has-aside .content-container {
+    max-width: none !important;
+  }
+
+  .VPDoc:not(.has-sidebar) .container {
+    max-width: none !important;
+  }
+
+  .VPDoc:not(.has-sidebar) .container > .content {
+    max-width: none !important;
+  }
+
+  .VPDoc .container {
+    max-width: none !important;
+  }
+}

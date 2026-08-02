@@ -1,0 +1,64 @@
+/* .vitepress/theme/style/index.css */
+@import './rainbow.css';
+@import './brand-rainbow.css';
+@import './brand-bg-spread.css';
+@import './blur.css';
+@import './full-width.css';
+@import './feature-marquee.css';
+@import './custom-block.css';
+@import './hidden.css';
+@import './sidebarIcon.css';
+/* 链接下划线去除 */
+.vp-doc a {
+  text-decoration: none;
+}
+/* VPFeatures 页卡悬浮效果 */
+.VPFeatures .items .item {
+  transition: transform 0.3s;
+}
+.VPFeatures .items .item:hover {
+  transform: translateY(-5px);
+}
+/* 文档 h1 标题使用品牌主题色 */
+.vp-doc h1 {
+  color: var(--vp-c-brand-1);
+}
+
+/* medium-zoom 层级覆盖，确保遮住导航栏 */
+.medium-zoom-overlay {
+  z-index: 30;
+}
+.medium-zoom-image {
+  z-index: 9999 !important;
+}
+
+:root {
+  --vp-font-family-base: 'TsangerJinKai', 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+}
+
+
+@font-face {
+  font-family: 'TsangerJinKai';
+  src: url('/fonts/TsangerJinKai-W03-subset.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TsangerJinKai';
+  src: url('/fonts/TsangerJinKai-W05-subset.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 大标题和站点名使用粗体字重 */
+.VPHomeHero .main h1,
+.VPNavBarTitle .title {
+  font-weight: 700;
+}
+
+/* 行内代码也使用自定义字体 */
+.vp-doc :not(pre) > code {
+  font-family: 'TsangerJinKai', 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+}

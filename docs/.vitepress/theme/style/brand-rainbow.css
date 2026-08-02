@@ -1,0 +1,17 @@
+/* 全局品牌色彩虹化 */
+/* 利用 rainbow keyframes 的两个端点生成渐变，
+   驱动 --vp-c-brand-1/2/3/soft 系列变量 */
+
+:root {
+  --vp-c-brand-1: color-mix(in srgb, var(--rainbow-prev) 50%, var(--rainbow-next) 50%);
+  --vp-c-brand-2: color-mix(in srgb, var(--rainbow-prev) 70%, var(--rainbow-next) 30%);
+  --vp-c-brand-3: color-mix(in srgb, var(--rainbow-prev) 30%, var(--rainbow-next) 70%);
+  --vp-c-brand-soft: color-mix(in srgb, var(--rainbow-prev) 15%, var(--rainbow-next) 15%);
+}
+
+.dark {
+  --vp-c-brand-1: color-mix(in srgb, var(--rainbow-prev) 40%, var(--rainbow-next) 60%);
+  --vp-c-brand-2: color-mix(in srgb, var(--rainbow-prev) 60%, var(--rainbow-next) 40%);
+  --vp-c-brand-3: color-mix(in srgb, var(--rainbow-prev) 20%, var(--rainbow-next) 80%);
+  --vp-c-brand-soft: color-mix(in srgb, var(--rainbow-prev) 12%, var(--rainbow-next) 12%);
+}

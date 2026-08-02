@@ -1,0 +1,221 @@
+/* 彩虹动画 - 50帧版 */
+@keyframes rainbow {
+    0% {
+        --rainbow-prev: #009ff7;
+        --rainbow-next: #c76dd1;
+    }
+    2% {
+        --rainbow-prev: #009bfb;
+        --rainbow-next: #d267c4;
+    }
+    4% {
+        --rainbow-prev: #0097fd;
+        --rainbow-next: #dd62b8;
+    }
+    6% {
+        --rainbow-prev: #0093fd;
+        --rainbow-next: #e55eac;
+    }
+    8% {
+        --rainbow-prev: #3a8efb;
+        --rainbow-next: #ea5b9e;
+    }
+    10% {
+        --rainbow-prev: #638af8;
+        --rainbow-next: #ef5992;
+    }
+    12% {
+        --rainbow-prev: #7e84f2;
+        --rainbow-next: #f15984;
+    }
+    14% {
+        --rainbow-prev: #947fec;
+        --rainbow-next: #f25a77;
+    }
+    16% {
+        --rainbow-prev: #a778e4;
+        --rainbow-next: #f15d6a;
+    }
+    18% {
+        --rainbow-prev: #b872da;
+        --rainbow-next: #ee615e;
+    }
+    20% {
+        --rainbow-prev: #c76dd1;
+        --rainbow-next: #eb6552;
+    }
+    22% {
+        --rainbow-prev: #d267c4;
+        --rainbow-next: #e56a46;
+    }
+    24% {
+        --rainbow-prev: #dd62b8;
+        --rainbow-next: #df6f3b;
+    }
+    26% {
+        --rainbow-prev: #e55eac;
+        --rainbow-next: #d77531;
+    }
+    28% {
+        --rainbow-prev: #ea5b9e;
+        --rainbow-next: #cf7b27;
+    }
+    30% {
+        --rainbow-prev: #ef5992;
+        --rainbow-next: #c6811e;
+    }
+    32% {
+        --rainbow-prev: #f15984;
+        --rainbow-next: #bb8515;
+    }
+    34% {
+        --rainbow-prev: #f25a77;
+        --rainbow-next: #b08a0e;
+    }
+    36% {
+        --rainbow-prev: #f15d6a;
+        --rainbow-next: #a48f0b;
+    }
+    38% {
+        --rainbow-prev: #ee615e;
+        --rainbow-next: #98930e;
+    }
+    40% {
+        --rainbow-prev: #eb6552;
+        --rainbow-next: #8b9715;
+    }
+    42% {
+        --rainbow-prev: #e56a46;
+        --rainbow-next: #7d9a1e;
+    }
+    44% {
+        --rainbow-prev: #df6f3b;
+        --rainbow-next: #6f9d28;
+    }
+    46% {
+        --rainbow-prev: #d77531;
+        --rainbow-next: #5f9f33;
+    }
+    48% {
+        --rainbow-prev: #cf7b27;
+        --rainbow-next: #4ba13f;
+    }
+    50% {
+        --rainbow-prev: #c6811e;
+        --rainbow-next: #34a44b;
+    }
+    52% {
+        --rainbow-prev: #bb8515;
+        --rainbow-next: #0aa557;
+    }
+    54% {
+        --rainbow-prev: #b08a0e;
+        --rainbow-next: #00a664;
+    }
+    56% {
+        --rainbow-prev: #a48f0b;
+        --rainbow-next: #00a772;
+    }
+    58% {
+        --rainbow-prev: #98930e;
+        --rainbow-next: #00a880;
+    }
+    60% {
+        --rainbow-prev: #8b9715;
+        --rainbow-next: #00a98e;
+    }
+    62% {
+        --rainbow-prev: #7d9a1e;
+        --rainbow-next: #00a99b;
+    }
+    64% {
+        --rainbow-prev: #6f9d28;
+        --rainbow-next: #00a9a8;
+    }
+    66% {
+        --rainbow-prev: #5f9f33;
+        --rainbow-next: #00a9b6;
+    }
+    68% {
+        --rainbow-prev: #4ba13f;
+        --rainbow-next: #00a8c2;
+    }
+    70% {
+        --rainbow-prev: #34a44b;
+        --rainbow-next: #00a8cf;
+    }
+    72% {
+        --rainbow-prev: #0aa557;
+        --rainbow-next: #00a6d9;
+    }
+    74% {
+        --rainbow-prev: #00a664;
+        --rainbow-next: #00a5e3;
+    }
+    76% {
+        --rainbow-prev: #00a772;
+        --rainbow-next: #00a3eb;
+    }
+    78% {
+        --rainbow-prev: #00a880;
+        --rainbow-next: #00a1f2;
+    }
+    80% {
+        --rainbow-prev: #00a98e;
+        --rainbow-next: #009ff7;
+    }
+    82% {
+        --rainbow-prev: #00a99b;
+        --rainbow-next: #009bfb;
+    }
+    84% {
+        --rainbow-prev: #00a9a8;
+        --rainbow-next: #0097fd;
+    }
+    86% {
+        --rainbow-prev: #00a9b6;
+        --rainbow-next: #0093fd;
+    }
+    88% {
+        --rainbow-prev: #00a8c2;
+        --rainbow-next: #3a8efb;
+    }
+    90% {
+        --rainbow-prev: #00a8cf;
+        --rainbow-next: #638af8;
+    }
+    92% {
+        --rainbow-prev: #00a6d9;
+        --rainbow-next: #7e84f2;
+    }
+    94% {
+        --rainbow-prev: #00a5e3;
+        --rainbow-next: #947fec;
+    }
+    96% {
+        --rainbow-prev: #00a3eb;
+        --rainbow-next: #a778e4;
+    }
+    98% {
+        --rainbow-prev: #00a1f2;
+        --rainbow-next: #b872da;
+    }
+    100% {
+        --rainbow-prev: #009ff7;
+        --rainbow-next: #c76dd1;
+    }
+}
+
+/* 彩虹色卡初始色 */
+:root {
+    --rainbow-prev: #009ff7;
+    --rainbow-next: #c76dd1;
+    animation: rainbow 8s linear infinite;
+}
+
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--rainbow-prev) 30%, var(--rainbow-next));
+    --vp-home-hero-image-background-image: linear-gradient(-45deg, var(--rainbow-prev) 30%, var(--rainbow-next));
+    --vp-home-hero-image-filter: blur(80px);
+}

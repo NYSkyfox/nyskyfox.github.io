@@ -1,0 +1,32 @@
+/* .vitepress/theme/style/feature-marquee.css */
+/* 首页 Feature 卡片：品牌色背景 + 跑马灯边框 */
+/* 注意：VPFeature 才是真正的卡片，.item 只是间距容器 */
+
+.VPFeature {
+  overflow: hidden;
+  position: relative;
+  border: none !important;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--rainbow-prev) 8%, transparent),
+      color-mix(in srgb, var(--rainbow-next) 8%, transparent)
+    ),
+    var(--vp-c-bg-soft) !important;
+}
+
+/* 跑马灯边框 */
+.VPFeature::before,
+.VPFeature::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--rainbow-prev) 45%, var(--rainbow-next) 45%);
+  animation: clippath 6s infinite linear;
+}
+
+.VPFeature::after {
+  animation: clippath 6s infinite -3s linear;
+}
