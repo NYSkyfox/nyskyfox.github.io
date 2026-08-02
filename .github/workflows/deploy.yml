@@ -33,3 +33,22 @@ jobs:
           path: .vitepress/dist
 
       - uses: actions/deploy-pages@v4
+
+      - name: Sync to VPS
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq sshpass
+          cd .vitepress && tar -czf /tmp/dist.tar.gz dist
+          echo "Uploading to server..."
+          sshpass -p ${{ secrets.SSH_PASSWORD }} scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/dist.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/tmp/dist.tar.gz
+          echo "Deploying..."
+          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
+            cd /var/www/vitepress
+            rm -rf dist.bak
+            mv dist dist.bak 2>/dev/null
+            tar -xzf /tmp/dist.tar.gz
+            chmod -R 755 dist
+            chown -R www-data:www-data dist
+            rm /tmp/dist.tar.gz
+            echo done
+          "
+          echo "VPS sync complete"
