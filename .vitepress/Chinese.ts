@@ -1,6 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
-/** 站点外观 & 汉化 */
+/** 汉化文本 */
 export const themeConfig: DefaultTheme.Config = {
   search: {
     provider: 'local',
@@ -30,9 +30,5 @@ export const themeConfig: DefaultTheme.Config = {
     quote: '你来到了未知的领域……要不返回首页看看？',
     linkLabel: '返回首页',
     linkText: '返回首页'
-  },
-  footer: {
-    message: '基于 VitePress 构建',
-    copyright: 'Copyright © 2025 OsEasy-ToolKit'
   }
 }
