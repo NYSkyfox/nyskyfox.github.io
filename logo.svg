@@ -1,5 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect x="2" y="2" width="60" height="60" rx="14" fill="#2E8B57" id="bg-rect"/>
-  <rect x="2" y="2" width="60" height="60" rx="14" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-  <text x="32" y="33" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff" text-anchor="middle" dominant-baseline="central" letter-spacing="2">OT</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#009ff7"/>
+      <stop offset="100%" style="stop-color:#c76dd1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- 圆形背景 -->
+  <circle cx="200" cy="195" r="170" fill="url(#grad)" filter="url(#shadow)"/>
+
+  <!-- 鲲鱼，头朝右 -->
+  <g transform="translate(200, 195)">
+    <!-- 鱼身主体：椭圆，稍扁 -->
+    <ellipse cx="0" cy="0" rx="70" ry="40" fill="#ffffff"/>
+
+    <!-- 鱼头与鱼身连接处（略隆起） -->
+    <ellipse cx="60" cy="0" rx="22" ry="35" fill="#ffffff"/>
+
+    <!-- 嘴巴 -->
+    <path d="M82,-6 Q92,-4 82,6" fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- 眼睛 -->
+    <circle cx="68" cy="-10" r="6" fill="#1a1a2e"/>
+    <circle cx="69" cy="-11" r="2" fill="#ffffff"/>
+
+    <!-- 胸鳍 -->
+    <path d="M30,38 Q15,70 0,75 Q15,55 25,38" fill="#ffffff" opacity="0.8"/>
+    <!-- 背鳍 -->
+    <path d="M-20,-40 Q-30,-75 -50,-85 Q-35,-55 -15,-38" fill="#ffffff" opacity="0.75"/>
+
+    <!-- 腹鳍 -->
+    <path d="M-20,38 Q-35,68 -50,75 Q-35,52 -15,38" fill="#ffffff" opacity="0.7"/>
+
+    <!-- 尾鳍（展开） -->
+    <path d="M-70,0 Q-115,-35 -145,-65 Q-105,-10 -70,0 Q-105,10 -145,65 Q-115,35 -70,0" fill="#ffffff" opacity="0.85"/>
+
+    <!-- 鱼鳞纹理 -->
+    <g fill="none" stroke="#ccccdd" stroke-width="1" opacity="0.3">
+      <path d="M-40,-15 Q-30,-5 -40,5"/>
+      <path d="M-20,-20 Q-10,-10 -20,0 Q-30,10 -20,20"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,5 0,15"/>
+      <path d="M20,-25 Q30,-15 20,-5 Q10,5 20,15"/>
+      <path d="M40,-20 Q50,-10 40,0 Q30,10 40,20"/>
+    </g>
+  </g>
 </svg>
