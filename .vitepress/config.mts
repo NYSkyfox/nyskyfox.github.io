@@ -39,6 +39,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/NYskyfox' }
     ],
+    footer: {
+      message: '基于 VitePress 构建',
+      copyright: 'Copyright © 2025 OsEasy-ToolKit'
+    },
     ...themeConfig,
     nav,
     sidebar
