@@ -1,4 +1,16 @@
 /* 彩虹动画 - 50帧版 */
+/* 注册自定义属性类型，确保动画可插值且 color-mix 能正确解析 */
+@property --rainbow-prev {
+  syntax: '<color>';
+  initial-value: #009ff7;
+  inherits: true;
+}
+@property --rainbow-next {
+  syntax: '<color>';
+  initial-value: #c76dd1;
+  inherits: true;
+}
+
 @keyframes rainbow {
     0% {
         --rainbow-prev: #009ff7;
