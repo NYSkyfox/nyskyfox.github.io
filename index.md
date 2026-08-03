@@ -13,8 +13,8 @@ hero:
       text: 简介
       link: /guide/intro
     - theme: brand
-      text: 网络解锁教程
-      link: /tutorial/unlock_network
+      text: 相关教程
+      link: /tutorial/
 
 features:
   - icon: 🧩

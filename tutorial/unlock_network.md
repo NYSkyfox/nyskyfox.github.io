@@ -10,7 +10,9 @@
 
 ## 操作步骤
 
-::: info 一：打开 CMD（命令提示符）
+### 一：打开 CMD（命令提示符）
+
+::: info 打开 CMD（命令提示符）
 
 **操作示例：**
 1. 点击任务栏搜索按钮（或按 `Win` 键）
@@ -24,7 +26,9 @@
 > 机房电脑通常默认登录管理员账户，直接 Win+R 运行 cmd 就是管理员权限，无需额外操作。
 :::
 
-::: info 二：停止 MMPC（学生端根服务）
+### 二：停止 MMPC 服务（学生端根服务）
+
+::: info 停止 MMPC 服务（学生端根服务）
 
 ```batch
 sc stop mmpc
@@ -39,7 +43,9 @@ sc stop mmpc
    <img loading="lazy" src="/images/unlock_network/5.png" alt="执行成功">
 :::
 
-::: info 三：停止 OeNetlimit（网络限制服务）
+### 三：停止 OeNetlimit 服务（网络限制服务）
+
+::: info 停止 OeNetlimit 服务（网络限制服务）
 
 ```batch
 sc stop oenetlimit
@@ -53,7 +59,9 @@ sc stop oenetlimit
 2. 显示 `STATE: 1 STOPPED`（或 `STOP_PENDING`）即表示执行成功
 :::
 
-::: info 四：结束 DeviceControl_x64.exe（设备控制进程）
+四：结束 DeviceControl_x64.exe（设备控制进程）
+
+::: info 结束 DeviceControl_x64.exe（设备控制进程）
 
 ```batch
 taskkill /f /im DeviceControl_x64.exe
