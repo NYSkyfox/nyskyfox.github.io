@@ -63,13 +63,7 @@
   font-family: 'TsangerJinKai', 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
 }
 
-/* Hero 字号整体缩小一号 */
-.VPHomeHero .name,
-.VPHomeHero .text {
-  font-size: 28px !important;
-  line-height: 36px !important;
-}
+/* 限制 tagline 宽度，避免长文字侵入 logo 区域 */
 .VPHomeHero .tagline {
-  font-size: 16px !important;
-  line-height: 24px !important;
+  max-width: 480px;
 }
