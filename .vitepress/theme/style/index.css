@@ -62,3 +62,14 @@
 .vp-doc :not(pre) > code {
   font-family: 'TsangerJinKai', 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
 }
+
+/* Hero 字号整体缩小一号 */
+.VPHomeHero .name,
+.VPHomeHero .text {
+  font-size: 28px !important;
+  line-height: 36px !important;
+}
+.VPHomeHero .tagline {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
