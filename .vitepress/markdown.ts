@@ -4,6 +4,16 @@ import type { MarkdownOptions } from 'vitepress'
 export const markdown: MarkdownOptions = {
   lineNumbers: true,
   config: (md) => {
+    // mermaid: 将 mermaid 代码块转换为 <pre class="mermaid">
+    const defaultFence = md.renderer.rules.fence
+    md.renderer.rules.fence = (tokens, idx, options, env, slf) => {
+      const token = tokens[idx]
+      const info = token.info.trim().split(/\s+/)[0]
+      if (info === 'mermaid') {
+        return `<pre class="mermaid">${token.content.trim()}</pre>`
+      }
+      return defaultFence ? defaultFence(tokens, idx, options, env, slf) : ''
+    }
     md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
       let htmlResult = slf.renderToken(tokens, idx, options)
       if (tokens[idx].tag === 'h1') {

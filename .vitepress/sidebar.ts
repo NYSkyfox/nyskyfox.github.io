@@ -49,7 +49,10 @@ export const sidebar: DefaultTheme.Sidebar = {
       collapsed: false,
       collapsible: true,
       items: [
-        { text: '快速上手', link: '/develop/start' }
+        { text: '快速上手', link: '/develop/start' },
+        { text: '静态分析报告', link: '/develop/report' },
+        { text: 'PE 深度逆向分析', link: '/develop/Report' },
+        { text: '完整运行流程图', link: '/develop/Os-Easy 完整流程图' }
       ]
     }
   ]
