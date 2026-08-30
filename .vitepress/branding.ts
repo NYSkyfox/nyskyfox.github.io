@@ -4,7 +4,7 @@ import type { DefaultTheme } from 'vitepress'
 export const branding: Partial<DefaultTheme.Config> = {
   logo: '/logo.svg',
   socialLinks: [
-    { icon: 'github', link: 'https://github.com/NYskyfox' }
+    { icon: 'github', link: 'https://github.com/NYSkyfox/OsEasy-ToolKit' }
   ],
   footer: {
     message: '基于 VitePress 构建',
