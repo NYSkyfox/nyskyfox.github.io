@@ -46,6 +46,8 @@ jobs:
             set -e
             mkdir -p /www/wwwroot/vitepress
             cd /www/wwwroot/vitepress
+            # 解除旧备份的不可变属性（宝塔 .user.ini 会被 chattr +i），避免删除失败
+            chattr -R -i dist.bak 2>/dev/null || true
             rm -rf dist.bak
             mv dist dist.bak 2>/dev/null || true
             tar -xzf /tmp/dist.tar.gz
